@@ -1,0 +1,29 @@
+body{
+
+/*	background-image: url('../img/map.jpg');
+	color: ;*/
+	background-color: #626567 ;
+	background-size: cover;
+    background-repeat: no-repeat;
+
+	
+}
+
+img{
+	height: 430px;
+	width: 770px;
+	margin-top:3%;
+	margin-left: 20%;
+
+}
+.box
+{   margin-top: -90px;
+	height: 60px;
+	width: 370px;
+   
+	position: relative;
+	left:30%;
+	text-align:center;
+
+
+}
