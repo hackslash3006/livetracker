@@ -26,7 +26,18 @@ body {margin:0;}
     background-color: #000;
 }
 
-
+.abc{
+   float: left;
+   text-decoration: none ;
+   width: 180px;
+   margin-right: 250px;
+   margin-top: 20px;
+   position: relative;
+   width: 
+}
+.abc i{
+  position: relative;
+}
 .active {
     background-color: #4CAF50;
 }
@@ -34,12 +45,17 @@ body {margin:0;}
 <body>
 
 <div class="icon-bar">
-  <a href="main.html" target="main.html"><i class="fa fa-home"></i></a> 
-  <a href="#"><i class="fa fa-search"></i></a> 
+  <a href="main.html" target="_parent"><i class="fa fa-home"></i></a> 
+  
   <a href="#"><i class="fa fa-envelope"></i></a> 
   <a href="#"><i class="fa fa-globe"></i></a>
-  <a href="login.html" target="map" > Log in </a>
-  <a href="register.html" target="map" > Register </a>
+<div  class="abc">
+ <form action="/action page.php" style="  width: 400px;  padding-left: 200px; ">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+     </div>
+  <a href="home.html" target="_parent" id="signOut"> Signout </a>
 </div>
 
 </body>
