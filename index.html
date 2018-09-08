@@ -3,10 +3,11 @@
 <head>
     <title>HackSlash | LiveLocater</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
-    <script src="mapConfig.js"></script>
+    <link href="http://cdn.mapfit.com/v2-4/assets/css/mapfit.css" rel='stylesheet'/>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script> -->
     <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
     <script src="newUserFirebase.js"></script>
+    <script src="https://apis.mapmyindia.com/advancedmaps/v1/kebn1jgs424ww94bu52h4nh21iva5gf2/map_load?v=01."></script>
     <script src="loginUserFirebase.js"></script>
     <script src="objSet.js"></script>
     <script src="main.js"></script>
@@ -17,9 +18,15 @@
 </head>
 
 <body>
-    <div id="map" style="width: 600px; height: 400px"></div>
+    <div id="map" style="width: 800px; height: 500px">
+        <script>
+            var lat = 28.659408700000004;
+            var long = 77.3396838;
+            var map=new MapmyIndia.Map("map",{ center:[lat, long],zoomControl: true,hybrid:true });
+            L.marker([lat, long]).addTo(map);    
+        </script>
+    </div>
 
-    <br>
     <br>
     <input type="text" id="fnameReg" placeholder="enter first name">
     <input type="text" id="lnameReg" placeholder="enter last name">
@@ -36,6 +43,7 @@
         <input type="password" placeholder="**********" id="loginPass">
         <input type="submit" id="loginButton">
     </div>
+    <script src="https://cdn.mapfit.com/v2-4/assets/js/mapfit.js"></script>
 </body>
 
 </html>

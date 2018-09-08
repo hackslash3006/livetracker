@@ -84,13 +84,14 @@ const userControl = {
                     if(userCredentials.loginPass == obj.passReg) {
                         console.log("Login Successful! as user");
                         localStorage.username = obj.firstName;
+                        localStorage.mobReg = obj.mobReg;
                         liveLocation(obj);
-                        break;
                     }
                 }
                 else {
                     localStorage.username = null;
                 }
+                window.location = "userMenu.html";
             }
         })
     }
